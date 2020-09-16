@@ -183,7 +183,7 @@
                              (propertize "↑ " 'face face))
                             ((memq state '(removed conflict unregistered))
                              (setq face 'mood-line-status-error)
-                             (propertize "✖ " 'face face))
+                             (propertize "✗ " 'face face))
                             (t
                              (setq face 'mood-line-status-neutral)
                              (propertize "✓ " 'face face)))
@@ -208,7 +208,7 @@
                                                  'mood-line-status-warning))))
                        (propertize "✓ Good  " 'face 'mood-line-status-success)))
           ('running (propertize "Δ Checking  " 'face 'mood-line-status-info))
-          ('errored (propertize "✖ Error  " 'face 'mood-line-status-error))
+          ('errored (propertize "✗ Error  " 'face 'mood-line-status-error))
           ('interrupted (propertize "⏸ Paused  " 'face 'mood-line-status-neutral))
           ('no-checker ""))))
 
