@@ -185,7 +185,7 @@
                              (setq face 'mood-line-status-error)
                              (propertize "✗ " 'face face))
                             (t
-                             (setq face 'mood-line-status-neutral)
+                             (setq face 'mood-line-status-info)
                              (propertize " " 'face face)))
                       (propertize (substring vc-mode (+ (if (eq backend 'Hg) 2 3) 2))
                                   'face face
