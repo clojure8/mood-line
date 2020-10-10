@@ -186,7 +186,7 @@
                              (propertize "✗ " 'face face))
                             (t
                              (setq face 'mood-line-status-neutral)
-                             (propertize "✓ " 'face face)))
+                             (propertize " " 'face face)))
                       (propertize (substring vc-mode (+ (if (eq backend 'Hg) 2 3) 2))
                                   'face face
                                   'mouse-face face)
